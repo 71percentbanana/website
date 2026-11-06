@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e14">
+  <meta name="description" content="Alan James — software developer and computer science student at VIT. Building across connected devices, computer vision, and the web.">
+  <title>Alan James — Software & Systems</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23232323'/%3E%3Ctext x='12' y='44' font-family='Arial' font-size='35' fill='%23ff713e'%3Eaj%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script type="module" src="scene.js"></script>
+</head>
+<body id="top">
+  <a class="skip" href="#work">Skip to projects</a>
+  <header class="header">
+    <nav class="shell nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Alan James home"><span class="monogram">aj<span>.</span></span><span>Alan James</span></a>
+      <div class="nav-links"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a></div>
+      <a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy shell">
+        <p class="eyebrow"><span class="status-dot"></span> ALAN JAMES / SOFTWARE & SYSTEMS</p>
+        <h1 id="hero-title"><span>Curiosity,</span><em>made real.</em></h1>
+        <p class="hero-description">I build software that reaches beyond the screen. Connected devices, intelligent systems, and ideas made tangible.</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="https://github.com/71percentbanana" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-note"><span class="mini-line"></span> CSE · Internet of Things · VIT Vellore</div>
+      </div>
+      <div class="sculpture" id="sculpture">
+        <div class="scene-grid" aria-hidden="true"></div>
+        <span class="scene-coordinate" aria-hidden="true">01 — THE ART OF CONNECTION</span>
+        <div class="fallback-sculpture" id="scene-fallback" aria-hidden="true"><i></i><i></i><i></i></div>
+        <canvas id="scene" tabindex="0" role="img" aria-label="Interactive three-dimensional knot sculpture. Drag to rotate, use arrow keys to turn, or select a material below."></canvas>
+
+        <div class="scene-bottom"><span id="scene-hint">An exploration of connection</span><div class="scene-controls" id="scene-controls" hidden><button class="swatch charcoal selected" data-color="charcoal" aria-label="Silver sculpture" aria-pressed="true"></button><button class="swatch orange" data-color="orange" aria-label="Orange sculpture" aria-pressed="false"></button><button class="swatch porcelain" data-color="porcelain" aria-label="Porcelain sculpture" aria-pressed="false"></button><button class="swatch copper" data-color="copper" aria-label="Brushed copper sculpture" title="Brushed copper" aria-pressed="false"></button><button class="swatch cobalt" data-color="cobalt" aria-label="Cobalt enamel sculpture" title="Cobalt enamel" aria-pressed="false"></button><button class="swatch titanium" data-color="titanium" aria-label="Polished titanium sculpture" title="Polished titanium" aria-pressed="false"></button><select id="render-quality" aria-label="3D render quality" title="3D render quality"><option value="auto">Auto</option><option value="light">Light</option><option value="high">High</option><option value="ultra">Ultra</option></select><button class="motion-button" id="motion" aria-label="Pause sculpture rotation" aria-pressed="false">Ⅱ</button></div></div>
+      </div>
+      <div class="hero-foot shell"><div class="hero-foot-heading"><span class="eyebrow">SIX WAYS I APPROACH A PROBLEM</span><a href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div><div class="scene-traits" role="group" aria-label="How I work">
+<button type="button" class="scene-label" data-trait="0" aria-haspopup="dialog"><b aria-hidden="true">01</b>Systems thinking</button>
+<button type="button" class="scene-label" data-trait="1" aria-haspopup="dialog"><b aria-hidden="true">02</b>Human curiosity</button>
+<button type="button" class="scene-label" data-trait="2" aria-haspopup="dialog"><b aria-hidden="true">03</b>Research rigor</button>
+<button type="button" class="scene-label" data-trait="3" aria-haspopup="dialog"><b aria-hidden="true">04</b>Security mindset</button>
+<button type="button" class="scene-label" data-trait="4" aria-haspopup="dialog"><b aria-hidden="true">05</b>Practical automation</button>
+<button type="button" class="scene-label" data-trait="5" aria-haspopup="dialog"><b aria-hidden="true">06</b>End-to-end building</button>
+</div></div>
+    </section>
+    <div class="discipline-strip shell"><span>FIELDS OF WORK</span><p>Connected devices <i>✳</i> Computer vision <i>✳</i> Full-stack development</p><a href="#work" aria-label="Scroll to selected work">↓</a></div>
+    <section class="section shell" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">01 — SELECTED WORK</p><h2 id="work-title">From thought<br>to <em>working things.</em></h2></div><p>A selection of experiments, systems,<br>and things that found their way into the world.</p></div>
+      <div class="filters" role="group" aria-label="Filter projects"><button class="active" data-filter="all" aria-pressed="true">All projects <span>06</span></button><button data-filter="systems" aria-pressed="false">Systems &amp; mobile</button><button data-filter="ai" aria-pressed="false">AI &amp; sensors</button><button data-filter="web" aria-pressed="false">Web &amp; compilers</button></div>
+      <p class="sr-only" id="filter-status" aria-live="polite">Showing all 6 projects</p>
+      <div class="projects">
+        <article class="project-card" data-category="systems" id="bouncepay">
+          <button class="project-visual payment-visual" data-project="bouncepay" aria-label="Explore BouncePay project">
+            <span class="visual-tag">01 / CONNECTIVITY</span><span class="visual-open" aria-hidden="true">↗</span>
+            <div class="payment-orbits" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="phone" aria-hidden="true"><div class="phone-camera"></div><div class="phone-top">bounce<span>pay</span> <span>◉</span></div><div class="phone-icon">↗</div><p>Payments that<br>find a way.</p><div class="phone-transaction"><span>Signed & ready</span><strong>₹ 250.00</strong><small>Waiting for a nearby relay</small></div><div class="phone-footer">● &nbsp; BLUETOOTH MESH</div></div>
+            <div class="floating-chip chip-payment" aria-hidden="true"><span class="signal">⌁</span><div><strong>Connection found</strong><small>One hop closer.</small></div></div><span class="visual-caption">OFFLINE FIRST. ALWAYS MOVING.</span>
+          </button>
+          <div class="project-meta"><div><h3><button data-project="bouncepay">BouncePay <span>↗</span></button></h3><p>Payments that travel through a Bluetooth mesh.</p></div><span class="project-type">Android / Systems</span></div>
+          <div class="tags"><span>Kotlin</span><span>BLE</span><span>Cryptography</span></div>
+        </article>
+        <article class="project-card" data-category="systems" id="cloud">
+<button class="project-visual repo-visual cloud-art" data-project="cloud" aria-label="Explore Cloud Scheduling project"><span class="visual-tag">02 / SYSTEMS RESEARCH</span><span class="visual-open" aria-hidden="true">↗</span><div class="network-art" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="repo-panel" aria-hidden="true"><span>SIMULATION / HIGH INTERRUPTION</span><strong>99.79<small>%</small></strong><p>Deadlines met with adaptive scheduling</p><div class='metric-bar'><i></i></div><span>vs. 93.37% for capability-only scheduling</span></div><span class="visual-caption">RISK ESTIMATION / CHECKPOINTS / CLOUD FALLBACK</span></button>
+<div class="project-meta"><div><h3><button data-project="cloud">Cloud Scheduling <span>↗</span></button></h3><p>A simulator for scheduling work on unreliable volunteer devices.</p></div><span class="project-type">Research / Distributed systems</span></div><div class="tags"><span>Python</span><span>Simulation</span><span>Scheduling</span></div></article><article class="project-card" data-category="web" id="mql">
+<button class="project-visual repo-visual compiler-art" data-project="mql" aria-label="Explore SQL2Mongo project"><span class="visual-tag">03 / COMPILER ENGINEERING</span><span class="visual-open" aria-hidden="true">↗</span><div class="repo-panel" aria-hidden="true"><span>SQL2MONGO / QUERY TRACE</span><code>SELECT name<br>FROM students<br>WHERE score &gt; 80;</code><div class='compile-steps'>Tokens → AST → IR → MongoDB</div></div><span class="visual-caption">SEVEN PHASES / ONE QUERY</span></button>
+<div class="project-meta"><div><h3><button data-project="mql">SQL2Mongo <span>↗</span></button></h3><p>A C compiler that translates SQL into MongoDB aggregation pipelines.</p></div><span class="project-type">Compilers / Databases</span></div><div class="tags"><span>C</span><span>AST</span><span>MongoDB</span></div></article>
+        <article class="project-card" data-category="web" id="decision-replay">
+          <button class="project-visual decision-visual" data-project="decision" aria-label="Explore Expert Decision Replay project"><span class="visual-tag">04 / DECISION INTELLIGENCE</span><span class="visual-open" aria-hidden="true">↗</span><div class="decision-stack" aria-hidden="true"><div class="paper paper-back"></div><div class="paper paper-middle"></div><div class="paper paper-front"><div class="paper-header"><span>↳</span> Decision record <b>v.04</b></div><h4>Every decision<br>has a story.</h4><div class="paper-line"></div><div class="paper-line short"></div><div class="decision-path"><span>Idea</span><i>→</i><span>Review</span><i>→</i><span class="approved">Approved</span></div></div></div><span class="visual-caption">CONTEXT. ALTERNATIVES. OUTCOMES.</span></button>
+          <div class="project-meta"><div><h3><button data-project="decision">Decision Replay <span>↗</span></button></h3><p>Keeping the reasoning behind a team’s decisions.</p></div><span class="project-type">Backend / Workflow</span></div><div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>React</span></div>
+        </article>
+        <article class="project-card" data-category="ai" id="microbit">
+<button class="project-visual repo-visual motion-art" data-project="microbit" aria-label="Explore micro:bit Motion Lab project"><span class="visual-tag">05 / SENSOR MACHINE LEARNING</span><span class="visual-open" aria-hidden="true">↗</span><div class="sensor-orbit" aria-hidden="true"><span>● ● ●<br>● ● ●<br>● ● ●</span></div><div class="repo-panel" aria-hidden="true"><span>BBC MICRO:BIT / MOTION SIGNAL</span><svg viewBox='0 0 320 75' aria-hidden='true'><path d='M0 42h28l17-18 13 36 17-44 15 34 20-10h27l14-14 15 27 13-39 16 40 15-14h32l19-20 14 34 12-23 15 11h18' fill='none' stroke='currentColor' stroke-width='2'/></svg><div class='compile-steps'>Accelerometer → Features → Prediction</div></div><span class="visual-caption">ACTIVITY TRACKING / ON-DEVICE GESTURES</span></button>
+<div class="project-meta"><div><h3><button data-project="microbit">micro:bit Motion Lab <span>↗</span></button></h3><p>Live activity and gesture recognition from a pocket-sized sensor.</p></div><span class="project-type">IoT / Applied ML</span></div><div class="tags"><span>Python</span><span>Random Forest</span><span>MakeCode</span></div></article>
+<article class="project-card" data-category="web" id="shotmatch">
+<button class="project-visual repo-visual shot-art" data-project="shotmatch" aria-label="Explore ShotMatch project"><span class="visual-tag">06 / CREATIVE SOFTWARE</span><span class="visual-open" aria-hidden="true">↗</span><div class="repo-panel" aria-hidden="true"><span>SHOTMATCH / COMPOSITION STUDY</span><div class='shot-frame'><i></i><b></b></div><div class='compile-steps'>Frame · Compare · Export</div></div><span class="visual-caption">MANUAL FRAMING / LIVE DEMO</span></button>
+<div class="project-meta"><div><h3><button data-project="shotmatch">ShotMatch <span>↗</span></button></h3><p>An interactive tool for matching a photo’s framing to a reference.</p></div><span class="project-type">Web / Creative tools</span></div><div class="tags"><span>Canvas</span><span>JavaScript</span><span>Capacitor</span></div></article>
+      </div>
+    </section>
+    <section class="about-section" id="about"><div class="shell about-grid"><div><p class="eyebrow">02 — THE PERSON BEHIND THE CODE</p><h2>Curious by nature.<br>Builder by choice<span>.</span></h2><div class="about-signature">Alan James <span>↗</span></div></div><div class="about-copy"><p class="large-copy">I’m drawn to the space where software meets the physical world.</p><p>From passing payments between offline phones to making sense of traffic footage, I like working through the details that make an idea work outside a diagram.</p><p>I’m studying Computer Science and Engineering, specializing in the Internet of Things, at VIT Vellore. Along the way, I’ve been building web applications, automation workflows, and AI systems through internships and personal projects.</p><div class="education"><span>VIT VELLORE<br><strong>B.Tech · CSE (IoT)</strong></span><span>2024–2028<br><strong>8.89 / 10 CGPA</strong></span></div></div></div><div class="shell toolbox"><span class="eyebrow">IN MY TOOLBOX</span><p>Python <span>·</span> TypeScript <span>·</span> Kotlin <span>·</span> React <span>·</span> Next.js <span>·</span> FastAPI <span>·</span> PostgreSQL <span>·</span> Docker</p></div></section>
+    <section class="section shell experience-section" id="experience"><div class="section-heading"><div><p class="eyebrow">03 — LEARNING BY DOING</p><h2>Where I’ve been building<span>.</span></h2></div></div><div class="timeline">
+      <details class="experience" open><summary><span class="experience-date">JUN 2026 — PRESENT</span><span class="experience-role"><strong>Formial Labs</strong><span>Technology Intern · Bengaluru</span></span><span class="expand" aria-hidden="true">+</span></summary><div class="experience-body"><p>Develop and maintain D2C applications using React, Next.js, Node.js, Python, and Shopify integrations. Built n8n campaign workflows, internal dashboards, CRM workflows, and backend services with deployments through GitHub Actions and Vercel.</p><div class="tags"><span>Full-stack development</span><span>Automation</span><span>Shopify</span></div></div></details>
+      <details class="experience"><summary><span class="experience-date">AUG 2026 — PRESENT</span><span class="experience-role"><strong>Infosys Springboard 7.0</strong><span>Virtual Intern</span></span><span class="expand" aria-hidden="true">+</span></summary><div class="experience-body"><p>Developed the Expert Decision Replay Platform using Python, FastAPI, and PostgreSQL. Implemented role-based access, approval workflows, version history, audit logging, and document management to preserve the context behind decisions.</p><div class="tags"><span>Backend development</span><span>Decision workflows</span></div></div></details>
+      <details class="experience"><summary><span class="experience-date">MAY — JUN 2026</span><span class="experience-role"><strong>Cezen Technologies</strong><span>Software Development Intern · Bengaluru</span></span><span class="expand" aria-hidden="true">+</span></summary><div class="experience-body"><p>Engineered an employee productivity platform with Python, Next.js, TypeScript, and Supabase. Integrated Windows and Chrome activity tracking with LLaMA 3.3 and Gemini APIs for automated activity classification.</p><div class="tags"><span>AI integration</span><span>Application development</span></div></div></details>
+    </div></section>
+    <section class="contact-section" id="contact"><div class="shell"><p class="eyebrow"><span class="status-dot"></span> HAVE SOMETHING IN MIND?</p><div class="contact-heading"><h2>Let’s build<br>something <em>good.</em></h2><a class="contact-arrow" href="mailto:alanvjames1@gmail.com" aria-label="Email Alan">↗</a></div><div class="contact-bottom"><div><a class="email-link" href="mailto:alanvjames1@gmail.com">alanvjames1@gmail.com</a><button class="copy-button" id="copy-email" aria-label="Copy email address">Copy email</button><span class="sr-only" id="copy-status" role="status"></span></div><div class="social-links"><a href="https://github.com/71percentbanana" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://in.linkedin.com/in/alan-james-0775132aa" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div></section>
+  </main>
+  <footer class="shell footer"><span>© <span id="year">2026</span> Alan James</span><span>Built with curiosity. Refined with care.</span><a href="#top">Back to top ↑</a></footer>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">PROJECT NOTES</span><button id="close-dialog" aria-label="Close project details">✕</button></div><div id="dialog-content"></div></dialog>
+</body>
+</html>
