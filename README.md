@@ -35,6 +35,12 @@ Then open `http://localhost:8000`. Serve the site over HTTP; opening `index.html
 
 Upload the contents of `dist/` to a static host, or configure the host's publish directory as `dist`. No build command, backend, API keys, or environment variables are needed. Asset URLs are relative, so the site can also be hosted under a subdirectory.
 
+### Vercel
+
+Import this repository with the repository root as the project's Root Directory. The committed `vercel.json` selects the Other framework preset, skips installation and building, and publishes `dist/` at `/`. Pushes to the production branch trigger a deployment when Vercel's Git integration is enabled.
+
+Keep Root Directory at the repository root; `dist/` is the Output Directory. This ensures the home page, scripts, styles, and bundled assets are served from the correct paths.
+
 The contact section uses email links and a copy-email button. Project artwork is illustrative; the case studies link to the corresponding repositories and available demos.
 
 ## Editing
